@@ -1,51 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Rock paper Scissors</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="title">Rock, Paper and Scissors</div>
+      <div class="title">Rock, Paper and Scissors</div>
     </header>
 
-
     <div class="game_info">
-        <div class="info">First One to Score 5 will Win the Game</div>
+      <div class="info">First One to Score 5 will Win the Game</div>
     </div>
-
 
     <div class="game_screen">
-        <div class="player">
-            <div class="username">Player</div>
-            <div class="img-container">
-                <img class="player_image" src="./assets/goku.png" alt="">
-            </div>
-            <div class="score">o</div>
+      <div class="player">
+        <div class="username">Player</div>
+        <div class="img-container">
+          <img class="player_image" src="./assets/goku.png" alt="" />
         </div>
+        <div id="humanScore" class="score">o</div>
+      </div>
 
+      <div class="screen">
+        <p class="message">Press Any Button to Start</p>
 
-        <div class="screen"></div>
+        <div class="final_result"></div>
+        <div class="start_msg"></div>
+      </div>
 
-
-        <div class="computer">
-            <div class="computer_title">Computer</div>
-            <div class="img_container">
-                <img class="computer_image" src="./assets/Beerus.png" alt="">
-            </div>
-            <div class="score">o</div>
+      <div class="computer">
+        <div class="computer_title">Computer</div>
+        <div class="img_container">
+          <img class="computer_image" src="./assets/Beerus.png" alt="" />
         </div>
+        <div id="computerScore" class="score">o</div>
+      </div>
     </div>
-
 
     <div class="playerButtons">
-        <button>Rock</button>
-        <button>Paper</button>
-        <button>Scissors</button>
+      <button id="rock">Rock</button>
+      <button id="paper">Paper</button>
+      <button id="scissors">Scissors</button>
     </div>
-
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
